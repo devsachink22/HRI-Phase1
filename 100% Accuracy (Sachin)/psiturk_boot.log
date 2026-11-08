@@ -1,0 +1,11 @@
+Now serving on http://0.0.0.0:22362
+Traceback (most recent call last):
+  File "src/gevent/greenlet.py", line 908, in gevent._gevent_cgreenlet.Greenlet.run
+  File "/home/Sachin/Documents/psiturk_env/lib/python3.8/site-packages/gunicorn/arbiter.py", line 242, in handle_chld
+    self.reap_workers()
+  File "/home/Sachin/Documents/psiturk_env/lib/python3.8/site-packages/gunicorn/arbiter.py", line 525, in reap_workers
+    raise HaltServer(reason, self.WORKER_BOOT_ERROR)
+gunicorn.errors.HaltServer: <HaltServer 'Worker failed to boot.' 3>
+2026-03-02T15:57:13Z <Greenlet at 0x7f7e1b00e680: <bound method Arbiter.handle_chld of <gunicorn.arbiter.Arbiter object at 0x7f7e1a301e50>>(17, None)> failed with HaltServer
+
+Now serving on http://0.0.0.0:22362

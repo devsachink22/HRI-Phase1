@@ -1,0 +1,232 @@
+
+
+<div>
+
+<div id="msg1" class="hidemsg">
+
+
+<div id="anykey" class="center-screen" style="font-size: 10vw;"> Please press the Spacebar to begin the Number Memory Game. </div>
+
+<div id="n_zero_rand_no_zero" class="center-screen" style="font-size: 10vw;"> </div>
+<div id="n_zero_nback_zero" style="font-size: 3vw; text-align: center;"></div>
+
+<div id="n_zero_correct" style="color:green;font-size: 3vw; text-align: center;"></div>
+
+<div id="n_zero_incorrect" style="color:red;font-size: 3vw; text-align: center;"></div>
+
+
+
+<div id="rand_no_one" class="center-screen" style="font-size: 10vw;"> </div>
+
+<div id="nback_one" class="center-screen" style="font-size: 3vw;"> </div>
+
+<div id="correct_one" style="color:green;font-size: 3vw; text-align: center;"></div>
+
+<div id="incorrect_one" style="color:red;font-size: 3vw; text-align: center;"></div>
+
+<div id="presenter_one" class="center-screen" style="font-size: 3vw;"> </div>
+
+
+
+<div id="rand_no_two" class="center-screen" style="font-size: 10vw;"> </div>
+
+<div id="nback_two" class="center-screen" style="font-size: 3vw;"> </div>
+
+<div id="correct_two" style="color:green;font-size: 3vw; text-align: center;"></div>
+
+<div id="incorrect_two" style="color:red;font-size: 3vw; text-align: center;"></div>
+
+<div id="presenter_two" class="center-screen" style="font-size: 3vw;"> </div>
+
+
+
+
+
+</div>
+</div>
+
+<div id="msg2" class="hidemsg">
+
+<video class= "only_block" id="1block" height = "500" width="500">
+        <source src="/static/videos/1block.mp4" type="video/mp4">        
+      </video>
+
+<video class = "Berth1_block" id="1block_2drop" height = "500" width="500" >
+        <source src="/static/videos/1block_2drop.mp4" type="video/mp4">
+        
+      </video>
+
+<video class = "Berth1_block" id="1block_3drop" height = "500" width="500">
+        <source src="/static/videos/1block_3drop.mp4" type="video/mp4">
+        
+      </video>
+
+<video class= "only_block" id="2block" height = "500" width="500">
+        <source src="/static/videos/2block.mp4" type="video/mp4">
+        
+      </video>
+
+
+<video class = "Berth2_block" id="2block_1drop" height = "500" width="500">
+        <source src="/static/videos/2block_1drop.mp4" type="video/mp4">
+        
+      </video>
+
+<video class = "Berth2_block" id="2block_3drop" height = "500" width="500">
+        <source src="/static/videos/2block_3drop.mp4" type="video/mp4">
+        
+      </video>
+
+
+<video class= "only_block" id="3block" height = "500" width="500" >
+        <source src="/static/videos/3block.mp4" type="video/mp4">
+        
+      </video>
+
+
+<video class = "Berth3_block" id="3block_1drop" height = "500" width="500">
+        <source src="/static/videos/3block_1drop.mp4" type="video/mp4">
+        
+      </video>
+
+<video class = "Berth3_block" id="3block_2drop" height = "500" width="500">
+        <source src="/static/videos/3block_2drop.mp4" type="video/mp4">
+  
+      </video>
+      
+      
+<video class = "Berth1_block" id="bag_berth_1" height = "500" width="500">
+        <source src="/static/videos/bag_berth_1.mp4" type="video/mp4">
+  
+      </video>     
+
+
+<video class = "Berth2_block" id="bag_berth_2" height = "500" width="500">
+        <source src="/static/videos/bag_berth_2.mp4" type="video/mp4">
+  
+      </video>  
+      
+
+<video class = "Berth3_block" id="bag_berth_3" height = "500" width="500">
+        <source src="/static/videos/bag_berth_3.mp4" type="video/mp4">
+  
+      </video>  
+
+
+
+</div>
+
+
+
+<div id="experiment-controls">
+<div id="countdown"></div>
+<button type="button" class="btn btn-default js-button">View Task</button>
+</div>
+
+
+
+<script>
+
+
+//Toggle function ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+var button = document.querySelector('.js-button');
+var index = 1;
+var numMessages = $('.hidemsg').length;
+$('.hidemsg').hide();
+toggler();
+button.addEventListener('click', toggler);
+function toggler() {
+    $('.hidemsg').hide();   
+    $('#msg' + index).show();
+
+      if (button.innerText === "View Task") { 
+
+      button.innerText = "View Teammate"; 
+    
+  }   
+  else {  
+    button.innerText= "View Task";    
+  }
+    index = (index + 1 <= numMessages) ? index + 1 : 1;
+}
+
+
+
+
+</script>
+
+
+<div id="id_confrmdiv"  >
+
+<div id = "random" > </div>
+
+<button id="id_truebtn">Yes</button>
+
+<button id="id_falsebtn">No</button>
+
+</div>
+
+
+
+
+<div id="id_block">
+
+<div id = "followup" > </div>
+<button id="id_Berth1">Berth1</button>
+<button id="id_Berth2">Berth2</button>
+<button id="id_Berth3">Berth3</button>
+
+</div>
+
+
+
+
+
+<div id="id_SA" class="overlay">
+
+<h1> Which berth is blocked? </h1>
+
+<button type="button" id="SA_Berth1">Berth1</button>
+
+<button type="button" id="SA_Berth2">Berth2</button>
+
+</div>
+
+
+<div id="id_wh">
+
+<div id = "random_wh" > </div>
+
+<button id="Berth1">Berth1</button>
+<button id="Berth2">Berth2</button>
+<button id="Berth3">Berth3</button>
+</div>
+
+
+
+<div id="id_workload" class="overlay" role="dialog" aria-modal="true" aria-labelledby="workload-heading">
+    <div class="workload-dialog">
+        <h1 id="workload-heading">Rate your workload on a scale of 1&ndash;3</h1>
+        <p class="workload-instruction">1 = Low &nbsp;&bull;&nbsp; 2 = Medium &nbsp;&bull;&nbsp; 3 = High</p>
+
+        <div class="workload-scale-options" role="group" aria-label="Workload level">
+            <button type="button" id="id_one" class="workload-option" aria-label="1, low workload">1</button>
+            <button type="button" id="id_two" class="workload-option" aria-label="2, medium workload">2</button>
+            <button type="button" id="id_three" class="workload-option" aria-label="3, high workload">3</button>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
