@@ -1,13 +1,13 @@
-# Astrobee Robot Software:
+# Astrobee Robot Software
 Astrobee's flight software performs vision-based localization, provides autonomous navigation, docking and perching, manages various sensors and actuators, and supports human-robot interaction with co-located astronauts via screen-based displays, light signaling, and sound. The flight software is hosted on each Astrobee's three internal single board computers and uses the open-source Robot Operating System (ROS) framework as message-passing middleware. It provides a high-level Astrobee Command API for controlling the robot and has multiple operating modes. It can execute a plan (command sequence), individual operator commands (teleoperation), or commands from guest science code running onboard Astrobee.
 
 The Astrobee Robot Software simulator, built using ROS and Gazebo, enables the flight software to be evaluated without the need for robot hardware. The supporting tools include a tool that processes ISS imagery to build maps for Astrobee localization, along with many others.
 
-# Environment:
+# Environment
 Ubuntu 24.04 
 python 3.8
 
-# Run:
+# Run
 1. Source venv or create one
     (if already created)
     source .venv/bin/activate

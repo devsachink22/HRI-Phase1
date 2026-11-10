@@ -13,7 +13,7 @@ python 3.8
 Please take a look at NLTC_requirements.txt to see all of the libraries
 
 
-# RUN
+# Run
 1. Source venv or create one
     (if already created)
     source .venv/bin/activate
