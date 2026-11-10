@@ -1,0 +1,19 @@
+please put the cargo on berth 1|{"command":"place","location":"berth1"}
+please put the cargo on berth 2|{"command":"place","location":"berth2"}
+please put the cargo on berth 3|{"command":"place","location":"berth3"}
+put it on berth 1|{"command":"place","location":"berth1"}
+put it on berth 2|{"command":"place","location":"berth2"}
+put it on berth 3|{"command":"place","location":"berth3"}
+put it on 3|{"command":"place","location":"berth3"}
+put it on 2|{"command":"place","location":"berth2"}
+put it on 1|{"command":"place","location":"berth1"}
+move it to 1|{"command":"place","location":"berth1"}
+move it to 2|{"command":"place","location":"berth2"}
+move to 3|{"command":"place","location":"berth3"}
+I SAID PUT THE CARGO ON BERTH 1|{"command":"place","location":"berth1"}
+put it on the left one|{"command":"place","location":"berth1"}
+put it on the right one|{"command":"place","location":"berth3"}
+put it on the one in the middle|{"command":"place","location":"berth2"}
+1|{"command":"place","location":"berth1"}
+2|{"command":"place","location":"berth2"}
+3|{"command":"place","location":"berth3"}

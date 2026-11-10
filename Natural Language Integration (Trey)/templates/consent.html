@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!--
+  The consent.html displays the text of your IRB-approved
+  consent form.  Even if you are not required to provide
+  a consent form, it is helpful to use this form to
+  describe what people can do if an error comes up, etc...
+
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Experiment - Informed Consent Form</title>
+        <link rel="stylesheet" href="/static/css/bootstrap.min.css" type="text/css" />
+        <link rel="stylesheet" href="/static/css/style.css" type="text/css" />
+        <script type="text/javascript">
+            function onexit() {
+              self.close(); // no harm, no foul here
+            }
+        </script>
+    </head>
+    <body>
+        <div id="container-consent">
+            <div id="consent">
+                <h1>We need your consent to proceed</h1>
+                <hr />
+                <div class="legal well">
+                    <p>
+                    You have been invited to take part in the research study: 
+                    </p>
+                    <p>
+		      <b>Purpose of Research:</b>
+          This research study is being conducted to study how human factors, particularly situational awareness and workload, 
+          influence human-robot interaction and collaborative task performance. 
+          The study focuses on how participants interact with a simulated Astrobee robot 
+          during cargo-placement tasks in a simulated International Space Station (ISS) environment.
+		      <br/>
+		      <b>What you will do in this study:</b>
+          If you agree to participate in this study,
+          you will be asked to fill out a brief demographic
+          survey, test your audio and video quality and perform a number-memory task while interacting with a simulated Astrobee robot. 
+          You will follow instructions, observe the robot's actions, and assist it in identifying available cargo-placement locations. 
+          Your responses and task performance will be recorded for research purposes.
+          		      <br/>
+		      <b>Time required:</b> The session will take approximately 15 minutes to complete.
+		      <br/>
+		      <b>Risks and discomfort:</b> There are no major
+			    foreseeable risks with this study.
+		      <br/>
+		      <b>Benefits:</b> There are no direct personal
+		      benefits.
+		      <br/>
+		      <b>Compensation:</b> You will receive $3.00 for
+		      completion at the end of the study.
+		      <br/>
+		      <b>Confidentiality:</b> Your data and consent form will be kept separate. Your research data will be stored securely using storage systems approved by Purdue University Northwest. Sharing of data with other researchers will only be done in such a manner that you will not be identified. By participating, you understand and agree that the data and information gathered during this study may be used for scientific analysis, academic publications, presentations, and future research. Any data shared with other researchers will be de-identified to protect participant confidentiality. However, your name, contact information, and other direct personal identifiers will not be mentioned in any such publication or dissemination of the research data. Research records will be retained for the period required by applicable regulations and Purdue University policies.
+		      <br/>
+		      <b>Participation and Withdrawal:</b> Your participation is completely voluntary. Should you decide at any time you no longer wish to participate you may discontinue your participation without penalty.
+		      <br/>
+		      <b>To contact the researcher:</b> If you have
+		      questions or concerns about this research please
+		      contact the principal investigator:
+		      Sayanti Roy,
+		      Intelligent Systems and Collaborative Robotics Research Lab,
+		      Purdue University Northwest,
+		      2200 169th St.
+		      Hammond, IN 46323,
+		      sayantiroy@pnw.edu.
+		      <br/>
+		      <b>Whom to contact about your rights in this
+			    research:</b> For questions, concerns,
+		      suggestions, or complaints that are not being
+		      addressed by the researcher, or
+		      research ­related harm, contact the 
+		      Purdue University Human Research Protection Program / Institutional Review Board (IRB) Office at
+		      irb@purdue.edu.
+		      <br/>
+		      By accepting this HIT, you confirm that you understand the above material, that you are willing to participate in
+		      this experiment, and that you allow us to use your data for scientific purposes, and may be published or
+		      otherwise shared with other researchers. No identifying information will ever be shared.
+                    </p>
+
+                    <button type="button" class="btn btn-default btn-sm" onClick="window.print();">
+                    <span class="glyphicon glyphicon-print"></span> Print a copy of this
+                    </button>
+                </div>
+
+                <hr />
+                <h4>Do you understand and consent to these terms?</h4>
+                <br />
+
+                <center>
+                    <button type="button" class="btn btn-primary btn-lg" onClick="window.location='/exp?hitId={{ hitid }}&assignmentId={{ assignmentid }}&workerId={{ workerid }}'">
+                    <span class="glyphicon glyphicon-ok"></span> I agree
+                    </button>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="btn btn-danger btn-lg" onClick="onexit()">
+                    <span class="glyphicon glyphicon-ban-circle"></span> No thanks, I do not want to do this HIT
+                    </button>
+                </center>
+
+            </div>
+        </div>
+    </body>
+</html>

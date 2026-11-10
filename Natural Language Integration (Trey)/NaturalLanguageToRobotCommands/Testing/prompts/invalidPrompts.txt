@@ -1,0 +1,5 @@
+please put the cargo on berth 4|{"error":"unable to determine command"}
+please put the cargo on berth 5|{"error":"unable to determine command"}
+please put the cargo on berth -1|{"error":"unable to determine command"}
+put in on berth 4|{"error":"unable to determine command"}
+put it on berth 7|{"error":"unable to determine command"}

@@ -1,0 +1,50 @@
+<div id="container-instructions">
+
+	<h1>Instructions</h1>
+
+	<hr />
+
+	<div class="instructions well">
+	
+	
+	<ul>
+	    <li> While you are playing the number memory game or monitoring the Astrobee robot's activity, the robot may ask for your assistance if it detects an obstacle blocking one of the berths (Berth 1 or Berth 2). When this happens, a dialog box will appear on your screen asking you to respond to the robot's question. </li>
+	    
+	    <li> Please be careful when responding, as the robot can sometime have wrong perception about the location of the blocked berth. Whenever the robot asks for assistance, you are encouraged to watch the simulated robot video to verify the actual location of the obstacle before responding to the robot. For example, if the robot indicates that Berth 1 is blocked but the video shows that Berth 2 is blocked, please respond by choosing option "No" or specific berth --> "Berth1", "Berth2" from the options to rectify the robot's mistake. </li>
+	    
+	    <li> The robot should place the cargo bag on the vacant berth. If Berth 1 is blocked, the robot should place the cargo bag on Berth 2. Similarly, if Berth 2 is blocked, the robot should place the cargo bag on Berth 1. Your assistance will help the robot identify the correct berth and complete the cargo placement task successfully. </li>
+	    
+	    <li> The image below shows an example of a question the robot may ask during the task. </li>
+	
+            </ul>
+	
+          <img id="myImg20" src="\static\images\comm_strat.png" height =  400 width = 600 class = "center" alt="Sample Question">
+        
+
+	    <script type="text/javascript">
+	    //console.log(psiTurk.getInstructionIndicator())
+	    </script>
+
+	</div>
+
+	<hr />
+
+
+    <div class="instructionsnav">
+        <div class="row">
+            <div class="col-xs-2">
+            	 <button type="button" id="prev" value="prev" class="btn btn-primary btn-lg previous">
+                <span class="glyphicon glyphicon-arrow-left"></span> Previous
+                </button>
+            </div>
+            <div class="col-xs-8">
+            </div>
+            <div class="col-xs-2">
+                <button type="button" id="next" value="next" class="btn btn-primary btn-lg continue">
+                Next <span class="glyphicon glyphicon-arrow-right"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+</div>

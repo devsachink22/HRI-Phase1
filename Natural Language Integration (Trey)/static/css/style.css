@@ -1,0 +1,304 @@
+
+body {
+   
+    background-color: white;
+    font-weight: 300; 
+    font-size: 13pt;
+}
+
+#experiment-controls {
+    position: fixed;
+    top: 16px;
+    right: 16px;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+#countdown {
+    font-size: 2vw;
+    white-space: nowrap;
+}
+
+#experiment-controls .js-button {
+    border: 2px solid black;
+    font-size: 1.5vw;
+}
+
+
+
+
+/* these are all the same for now, but easy to modify individually */
+#container-consent, #container-instructions, #container-questionnaire {
+    background: white;
+    margin-left: 2%;
+    }
+
+
+
+#id_confrmdiv
+{
+    width: 40%;
+    background-color: #eee;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    padding: 6px 8px 8px;
+    box-sizing: border-box;
+    text-align: center;
+}
+#id_confrmdiv button {
+    background-color: #ccc;
+    display: block;
+    border-radius: 3px;
+    border: 1px solid #aaa;
+    padding: 2px;
+    text-align: center;
+    width: 60px;
+    cursor: pointer;
+}
+#id_confrmdiv button:hover
+{
+    background-color: #ddd;
+}
+#confirmBox .message
+{
+    text-align: left;
+
+}
+
+
+#id_block
+{
+   width: 40%;
+    background-color: #eee;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    padding: 6px 8px 8px;
+    box-sizing: border-box;
+    text-align: center;
+}
+#id_block button {
+    background-color: #ccc;
+    display: block;
+    border-radius: 3px;
+    border: 1px solid #aaa;
+    padding: 2px;
+    text-align: center;
+    width: 60px;
+    cursor: pointer;
+}
+#id_block button:hover
+{
+    background-color: #ddd;
+}
+
+
+
+
+
+#id_wh
+{
+    width: 40%;
+    background-color: #eee;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    padding: 6px 8px 8px;
+    box-sizing: border-box;
+    text-align: center;
+}
+#id_wh button {
+    background-color: #ccc;
+    display: block;
+    border-radius: 3px;
+    border: 1px solid #aaa;
+    padding: 2px;
+    text-align: center;
+    width: 60px;
+    cursor: pointer;
+}
+#id_wh #wh_send {
+    display: inline-block;
+    vertical-align: middle;
+}
+#id_wh button:hover
+{
+    background-color: #ddd;
+}
+
+
+
+
+
+.overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  cursor: pointer;
+  overflow-x: hidden;
+}
+
+
+#id_workload {
+  z-index: 1000;
+  background-color: #fff;
+  box-sizing: border-box;
+  padding: 24px;
+  text-align: center;
+  cursor: default;
+  overflow-y: auto;
+}
+
+body.workload-active {
+  overflow: hidden;
+}
+
+body.workload-active #experiment-controls,
+body.sa-active #experiment-controls {
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.workload-dialog {
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 22px;
+  background-color: #fff;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.workload-dialog h1 {
+  margin: 0;
+  font-size: clamp(24px, 2.5vw, 34px);
+}
+
+.workload-instruction {
+  margin: 10px 0 20px;
+  color: #4b5563;
+  font-size: 16px;
+}
+
+.workload-scale-options,
+.workload-scale-preview {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+#id_workload .workload-option {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  min-height: 38px;
+  padding: 4px 8px;
+  background-color: #fff;
+  border: 2px solid #9ca3af;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.15s ease, border-color 0.15s ease, transform 0.15s ease;
+}
+
+#id_workload .workload-option:hover,
+#id_workload .workload-option:focus {
+  background-color: #eef6fc;
+  border-color: #337ab7;
+  outline: 3px solid rgba(51, 122, 183, 0.25);
+  outline-offset: 2px;
+  transform: translateY(-2px);
+}
+
+.workload-scale-preview {
+  max-width: 680px;
+  margin: 28px auto;
+}
+
+.workload-preview-level {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 160px;
+  min-height: 100px;
+  background-color: #fff;
+  border: 2px solid #b7bec8;
+  border-radius: 10px;
+}
+
+.workload-preview-level strong {
+  font-size: 30px;
+  line-height: 1;
+}
+
+.workload-preview-level span {
+  margin-top: 9px;
+  font-size: 17px;
+}
+
+@media (max-width: 600px) {
+  .workload-dialog {
+    margin-top: 0;
+    padding: 24px 18px;
+  }
+
+  .workload-scale-options,
+  .workload-scale-preview {
+    gap: 10px;
+  }
+
+  #id_workload .workload-option {
+    width: 44px;
+    min-height: 36px;
+    padding: 4px 6px;
+  }
+}
+
+
+.center-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 1vh;
+}
+
+
+#id_SA
+{
+    
+    background-color: #eee;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    padding: 6px 8px 8px;
+    box-sizing: border-box;
+    text-align: center;
+}
+#id_SA button {
+    background-color: #ccc;
+    display: inline-block;
+    border-radius: 3px;
+    border: 1px solid #aaa;
+    padding: 2px;
+    text-align: center;
+    width: 60px;
+    cursor: pointer;
+}
+#id_SA button:hover
+{
+    background-color: #ddd;
+}
+
+
+

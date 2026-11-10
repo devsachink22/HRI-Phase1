@@ -1,0 +1,12 @@
+why do you hate me?|{"error":"unable to determine command"}
+DUDE|{"error":"unable to determine command"}
+Howdy how are you?|{"error":"unable to determine command"}
+I can smell beef|{"error":"unable to determine command"}
+move|{"error":"unable to determine command"}
+stewart|{"error":"unable to determine command"}
+man I love stewart little|{"error":"unable to determine command"}
+stop doing that|{"error":"unable to determine command"}
+stop|{"error":"unable to determine command"}
+DO AS YOU ARE TOLD|{"error":"unable to determine command"}
+beef boy|{"error":"unable to determine command"}
+howdy?|{"error":"unable to determine command"}
