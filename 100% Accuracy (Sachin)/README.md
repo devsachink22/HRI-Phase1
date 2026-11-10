@@ -32,7 +32,7 @@ python 3.8
     psiturk server off
     deactivate
 
-# Experiment Design
+# Experiment Design:
 There are 9 conditions, a 3×3 design. Two things vary: how hard the memory game is, and how the robot asks for help. 
 
 Memory game difficulty (n-back)
@@ -50,8 +50,8 @@ Conditions 3, 4, 5 use the yes/no style, run by myFunction. The robot asks somet
 Conditions 6, 7, 8 use the wh style, run by whFunction. The robot asks "I think Berth 1 is blocked. Where you want me 
     to put this bag?" This is the prompt that now has the text box.
 
-# Future Fixes
+# Future Fixes:
 Currently the model + program consistently succeed except for the valid prompts asking for the cargo to be placed on the left/right/middle ones
 
-# Important Notes
+# Important Notes:
 Note: As of Oct 28, 2026, this code will actually be a integrated into Amazon Psiturk and be an independent repository.
